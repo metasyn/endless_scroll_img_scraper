@@ -29,7 +29,8 @@ Requirements
 * selenium
 
 If you don't have them just simply
-    sudo pip install *package name*
+
+```sudo pip install *package name*```
 
 License
 =======
