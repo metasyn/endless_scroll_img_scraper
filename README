@@ -1,18 +1,18 @@
 About this program:
+===================
+
 This is a program written in python that scrapes a URL page for images, specifically for pages that have a "endless scroll" feature such as tumblr.  
 
 To run just type this at the command line:
 python endless_scroll_img_scraper.py
 and you will be prompted to enter the URL you wish to scrape images from.
 
-Optional command line arg: 
+Optional command line arugments: 
+================================
+
 -- load_time: A float that is how many seconds the program waits for the website to load after each page down while scrolling to the end of the "endless scroll". Default is set to 0.5 seconds. This arg may need to be used to ensure all images are downloaded, dependent on your internet speed, the amount of data per load, etc. This arg can be used to quicken the scraping process, but if the load time is too small it may not scrape all images from the site. Example usage: python endless_scroll_img_scraper.py 0.75 
 
-ToDo:
-1.) To be more efficient it should save images as it is scrolling down the page. (Currently this program scrolls to the end of the page and then saves all the images) 
-2.) When scrolling a site, explicitly check that it is done loading before continuing. (Currently the program waits for a certain load_time before continuing)
-3.) When scraping a site, first create a directory for it and store all of it's pictures in that directory. (Currently all images get saved to the directory containing the source code)
-4.) If a user is scraping a URL they have already scraped just save the pictures they do not already have. (Currently any duplicates get written over)
-5.) Add another command line arg for image filetype to scrape. (Currently hardcoded for .jpg and .png files only)
-6.) Add another command line arg for web browser to allow use with Chrome, IE, etc. (Currently hardcoded to only uses the Firefox web browser)
-7.) Add error checking and handling to user inputs.
+License
+=======
+
+
